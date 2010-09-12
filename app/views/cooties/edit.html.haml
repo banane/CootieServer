@@ -1,0 +1,53 @@
+%h1
+  Editing cootie
+- form_for(@cootie) do |f|
+  = f.error_messages
+  %p
+    = f.label :from_email
+    %br
+    = f.text_field :from_email
+  %p
+    = f.label :to_email
+    %br
+    = f.text_field :to_email
+  %p
+    = f.label :fortune1
+    %br
+    = f.text_field :fortune1
+  %p
+    = f.label :fortune2
+    %br
+    = f.text_field :fortune2
+  %p
+    = f.label :fortune3
+    %br
+    = f.text_field :fortune3
+  %p
+    = f.label :fortune4
+    %br
+    = f.text_field :fortune4
+  %p
+    = f.label :fortune5
+    %br
+    = f.text_field :fortune5
+  %p
+    = f.label :fortune6
+    %br
+    = f.text_field :fortune6
+  %p
+    = f.label :fortune7
+    %br
+    = f.text_field :fortune7
+  %p
+    = f.label :fortune8
+    %br
+    = f.text_field :fortune8
+  %p
+    = f.label :pickedup
+    %br
+  = f.check_box :pickedup
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @cootie
+|
+= link_to 'Back', cooties_path

@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  from_email: MyString
+  to_email: MyString
+  fortune1: MyString
+  fortune2: MyString
+  fortune3: MyString
+  fortune4: MyString
+  fortune5: MyString
+  fortune6: MyString
+  fortune7: MyString
+  fortune8: MyString
+  pickedup: false
+
+two:
+  from_email: MyString
+  to_email: MyString
+  fortune1: MyString
+  fortune2: MyString
+  fortune3: MyString
+  fortune4: MyString
+  fortune5: MyString
+  fortune6: MyString
+  fortune7: MyString
+  fortune8: MyString
+  pickedup: false

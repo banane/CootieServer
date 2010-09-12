@@ -1,0 +1,58 @@
+%h1
+  Listing cooties
+%table
+  %tr
+    %th
+      From email
+    %th
+      To email
+    %th
+      Fortune1
+    %th
+      Fortune2
+    %th
+      Fortune3
+    %th
+      Fortune4
+    %th
+      Fortune5
+    %th
+      Fortune6
+    %th
+      Fortune7
+    %th
+      Fortune8
+    %th
+      Pickedup
+  - @cooties.each do |cootie|
+    %tr
+      %td
+        = h cootie.from_email
+      %td
+        = h cootie.to_email
+      %td
+        = h cootie.fortune1
+      %td
+        = h cootie.fortune2
+      %td
+        = h cootie.fortune3
+      %td
+        = h cootie.fortune4
+      %td
+        = h cootie.fortune5
+      %td
+        = h cootie.fortune6
+      %td
+        = h cootie.fortune7
+      %td
+        = h cootie.fortune8
+      %td
+        = h cootie.pickedup
+      %td
+        = link_to 'Show', cootie
+      %td
+        = link_to 'Edit', edit_cooty_path(cootie)
+      %td
+        = link_to 'Destroy', cootie, :confirm => 'Are you sure?', :method => :delete
+  %br
+= link_to 'New cootie', new_cooty_path

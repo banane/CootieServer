@@ -9,6 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100912001640) do
+
+  create_table "cooties", :force => true do |t|
+    t.string   "from_email"
+    t.string   "to_email"
+    t.string   "fortune1"
+    t.string   "fortune2"
+    t.string   "fortune3"
+    t.string   "fortune4"
+    t.string   "fortune5"
+    t.string   "fortune6"
+    t.string   "fortune7"
+    t.string   "fortune8"
+    t.boolean  "pickedup"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
